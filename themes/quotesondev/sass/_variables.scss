@@ -6,6 +6,10 @@ $base__space-unit: 1.5rem;
 
 $color__background-body: #fff;
 $color__text-main: #404040;
+$color__background-main: #222222;
+$color__text-green: #00cc00;
+$color__hover-green: #43962a;
+$color__text-white: #FFFFFF;
 
 $color__background-screen: #f1f1f1;
 $color__text-screen: #21759b;
@@ -21,7 +25,7 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: sans-serif;
+$font__main: Exo, sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
