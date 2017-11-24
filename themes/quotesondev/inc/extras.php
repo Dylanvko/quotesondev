@@ -71,3 +71,25 @@ function qod_modify_archives( $query ){
 }
 
   add_action( 'pre_get_posts', 'qod_modify_archives' );
+
+  function qod_login_logo() {
+	echo '<style type="text/css">                                                                   
+            #login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/qod-logo.svg) !important; 
+            background-color: #222222;
+			background-size: 300px 60px;
+			height: 60px;
+            width: 300px;
+            padding: 0.5rem;
+		}                            
+	</style>';
+}
+add_action('login_head', 'qod_login_logo');
+
+
+// Change WP url to quotesondev
+
+function qod_replace_url( $url ) {
+	return get_bloginfo( 'url' ); //insert url here
+}
+add_filter( 'login_headerurl', 'qod_replace_url' );
+

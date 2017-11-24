@@ -257,18 +257,20 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #00cc00;
   font-family: Exo, sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  color: #ffffff; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  color: #ffffff; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -320,7 +322,7 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #222222;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -452,7 +454,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -482,6 +483,11 @@ a {
     display: block;
     text-decoration: none; }
 
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -508,9 +514,7 @@ a {
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility

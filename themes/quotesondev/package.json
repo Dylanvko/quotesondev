@@ -23,7 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/redacademy/quotesondev-starter.git"
   },
-  "author": "mandiwise",
+  "author": "Dylan Kocsis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redacademy/quotesondev-starter/issues"
