@@ -3,6 +3,8 @@
   $('#new-quote-button').on('click', function ( event ) {
     event.preventDefault();
 
+    $( '.source' ).empty();
+
     $.ajax( {
       method: 'GET',
       url: api_vars.root_url + '/wp/v2/posts/?filter[orderby]=rand&filter[posts_per_page]=1',
@@ -14,12 +16,13 @@
       var title = pulledPost.title.rendered;
       var quoteSource = pulledPost._qod_quote_source;
       var quoteSourceURL = pulledPost._qod_quote_source_url;
-
+      
       $('#entry-content').html( content );
       $('#entry-title').html( title );
-      $('.source').html( quoteSource );
-      $('.source-url').html( quoteSourceURL )
-      
+
+      if (pulledPost._qod_quote_source_url){
+      $('.source').html( '<a href="' + quoteSourceURL + '">' + quoteSource + '</a>' );
+      }
   });
 
 });

@@ -24,10 +24,10 @@ $source_url = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
 
 			<?php elseif( $source ): ?>
 
-			<span class="source" id="quote-source-name">, <?php echo $source; ?></span>
+			<span class="source">, <?php echo $source; ?></span>
 
 			<?php else: ?>
-			<span class="source" id="quote-source-name"></span>
+			<span class="source"></span>
 		<?php endif; ?>
 
 	</div>
