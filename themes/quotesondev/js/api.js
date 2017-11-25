@@ -11,6 +11,7 @@
 
     }).done(function(data) {
 
+      var slug = data[0].slug;
       var pulledPost = data.shift();
       var content = pulledPost.content.rendered;
       var title = pulledPost.title.rendered;
@@ -19,6 +20,7 @@
       
       $('#entry-content').html( content );
       $('#entry-title').html( title );
+      $('.hentry').append( history.pushState(null, null, slug) );      
 
       if (pulledPost._qod_quote_source_url){
       $('.source').html( '<a href="' + quoteSourceURL + '">' + quoteSource + '</a>' );
