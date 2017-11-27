@@ -517,6 +517,11 @@ a {
   border: none;
   color: #00cc00;
   text-shadow: none; }
+  .search-submit:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    color: #43962a;
+    text-shadow: none; }
 
 /* Menus */
 .main-navigation {
@@ -824,3 +829,17 @@ object {
 .error404 fieldset {
   border: none;
   margin-top: 0.5rem; }
+
+.archive .nav-links {
+  display: block; }
+
+.archive .page-title {
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #fff; }
+
+.archive .post {
+  margin: 3rem 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed #fff; }
+  .archive .post .entry-content {
+    margin-bottom: 2rem; }

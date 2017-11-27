@@ -72,6 +72,12 @@ a {
 	border: none;
 	color: $color__text-main;
 	text-shadow: none;
+
+	&:hover {
+		box-shadow: none;
+		color: $color__text-hover;
+		text-shadow: none;
+	}
 } 
 
 /* Menus */

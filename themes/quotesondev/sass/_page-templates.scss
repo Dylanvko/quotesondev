@@ -150,3 +150,25 @@
     margin-top: 0.5rem;
   }
 }
+
+.archive {
+
+  .nav-links {
+    display: block;
+  }
+
+  .page-title {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed $color__background-body;
+  }
+
+  .post {
+    margin: 3rem 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed $color__background-body;
+
+    .entry-content {
+      margin-bottom: 2rem;
+    }
+  }
+}
