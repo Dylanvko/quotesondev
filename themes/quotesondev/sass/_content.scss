@@ -32,7 +32,84 @@
 	margin: 0 0 $base__space-unit;
 }
 
-.right-quote,
+.right-quote {
+	font-size: 9rem;
+	display: none;
+	
+	@include tablet {
+		display: none;				
+	}
+	@include desktop {
+		display: inline;
+	}
+}
+
 .left-quote {
 	font-size: 9rem;
+	display: none;
+	
+	@include tablet {
+		display: none;		
+	}
+	@include desktop {
+		display: inline;
+	}
+}	
+
+.site-header {
+	margin: 3rem 0rem 0rem 0rem;
+
+	.site-branding {
+
+		.logo {
+
+			img {
+				width: 18rem;
+
+				@include tablet {
+					width: 31rem;
+					
+				}
+				@include desktop {
+					width: 44rem;
+					margin: 0 auto;
+					display: block;
+				
+				}
+			}
+		}
+	}
+}
+
+.site-footer {
+
+	ul {
+		display: inline-flex;
+
+		li:first-child {
+			padding-right: 1rem;
+			border-right: 1px solid $color__background-body;
+			line-height: 1rem;
+		}
+
+		li:nth-child(2n) {
+			padding: 0rem 1rem;
+			border-right: 1px solid $color__background-body;
+			line-height: 1rem;
+		}
+
+		li:nth-child(3n) {
+			padding: 0rem 1rem;
+			line-height: 1rem;
+		}
+	}
+
+	.site-info {
+		margin: 4.5rem 0; 
+
+		.footer-info {
+			margin: 1.5rem 0;
+			font-size: 1rem;
+		}
+	}
 }

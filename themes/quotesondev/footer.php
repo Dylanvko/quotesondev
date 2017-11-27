@@ -14,11 +14,11 @@
 					<?php esc_html( 'Primary Menu' ); ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
-				<div class="site-info">
-				<p class='footer-info'>Brought to you by</p>
+			<div class="site-info">
+				<p class='footer-info'>Brought to you by
 				<a href="<?php echo esc_url( 'https://redacademy.com/' ); ?>">
-					<?php printf( esc_html( '%s' ), 'Red Academy' ); ?></a>
-				</div><!-- .site-info -->
+					<?php printf( esc_html( '%s' ), 'Red Academy' ); ?></a></p>
+			</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

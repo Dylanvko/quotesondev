@@ -25,6 +25,19 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	margin-bottom: $base__space-unit;
 	color: #ffffff;
+	line-height: $font__line-height-body;
+	font-family: $font__main;
+	font-size: 20px;
+	font-weight: 300;
+
+	@include tablet {
+		font-size: 1.75rem;				
+	}
+	@include desktop {
+		display: inline;
+		font-size: 2.5rem;
+	}
+
 }
 
 dfn, cite, em, i {
@@ -67,4 +80,17 @@ mark, ins {
 
 big {
 	font-size: 125%;
+}
+
+.site-content {
+	display: flex;
+}
+
+.entry-title {
+	margin-bottom: $base__space-unit;
+	color: #ffffff;
+	line-height: $font__line-height-body;
+	font-family: $font__main;
+	font-size: 20px;
+	font-weight: 300;
 }

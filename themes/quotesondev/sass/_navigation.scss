@@ -6,6 +6,7 @@
 
 a {
 	color: $color__text-main;
+	text-decoration: none;
 
 	&:visited {
 		color: $color__text-main;
@@ -24,6 +25,21 @@ a {
 	}
 }
 
+/* Buttons */
+
+.new-quote-button {
+	background-color: $color__background-main;
+	border: 2px solid $color__text-main;
+	border-radius: 3px;
+	color: $color__text-main;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	padding: .75rem 2.25rem;
+	text-shadow: none;
+	box-shadow: none;
+}
+
 /* Menus */
 
 .main-navigation {
@@ -31,6 +47,7 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
+	margin-bottom: 1rem;
 
 	ul {
 		display: block;
@@ -95,8 +112,8 @@ a {
 	}
 }
 
-.site-footer {
-	display: flex;
+.site-info {
+	
 }
 
 /* Small menu. */

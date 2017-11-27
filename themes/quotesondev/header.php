@@ -28,11 +28,6 @@
 					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' >
 						<img src='<?php echo get_stylesheet_directory_uri(); ?>/images/qod-logo.svg'>
 					</a>
-					
-				<div class='left-quote'><i class="fa fa-quote-left" aria-hidden="true"></i>
-				</div>
-				<div class='right-quote'><i class="fa fa-quote-right" aria-hidden="true"></i>
-				</div>
 
 
 				</div><!-- .site-branding -->
