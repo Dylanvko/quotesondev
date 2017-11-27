@@ -8,20 +8,23 @@
 
 .hfeed.site {
   padding: 1rem;
+  max-width: $desktop-width;
+  margin: 0 auto;
 }
 
 .site-content {
 
   @include desktop {
     margin: 4rem auto;
-    position: relative;
     width: $desktop-width;
+
   }
 
   .content-area {
     
     @include desktop {
-      margin: 3rem;
+      margin: 2rem auto;
+      padding: 0rem 2rem;
     }
   }
 }
@@ -94,5 +97,56 @@
         font-weight: lighter;
       }
     }
+  }
+}
+
+.logged-in {
+
+  .content-area {
+    width: 100%;
+
+    @include tablet {
+      width: 100%;
+    }
+    
+    @include desktop {
+      margin: 2rem auto;
+      padding: 0rem 2rem;
+      width: $desktop-width;
+    }
+  }
+
+  input, textarea {
+    background-color: $color__background-main;
+    border: 1px solid $color__text-main;
+    color: $color__text-main;
+  }
+}
+
+.submit-label {
+  display: block;
+  margin: 0.5rem 0rem;
+}
+
+.last-submit-box {
+  margin-bottom: 1rem;
+}
+
+.error404 {
+ 
+  @include desktop {
+    .not-found {
+      width: 500px;
+      margin: 0rem auto;
+    }
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+
+  fieldset {
+    border: none;
+    margin-top: 0.5rem;
   }
 }

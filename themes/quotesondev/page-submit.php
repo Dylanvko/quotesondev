@@ -23,26 +23,26 @@ get_header(); ?>
       <form name="quoteForm" id="quote-submission-form" >
 
       <div>
-        <label for="quote-author">Author of Quote</label>
-        <input type="text" name="quote_author" id="quote-author" >
+        <label for="quote-author" class="submit-label">Author of Quote</label>
+        <input type="text" name="quote_author" id="quote-author" class="submit-box">
       </div>
 
       <div>
-        <label for="quote-content">Quote</label>
-        <textarea rows="3" cols="20" name="quote_content" id="quote-content" ></textarea>
+        <label for="quote-content" class="submit-label">Quote</label>
+        <textarea rows="3" cols="20" name="quote_content" id="quote-content" class="submit-box"></textarea>
       </div>
 
       <div>
-        <label for="quote-source">Quote Source</label>
-        <input type="text" name="quote_source" id="quote-source" >
+        <label for="quote-source" class="submit-label">Quote Source</label>
+        <input type="text" name="quote_source" id="quote-source" class="submit-box">
       </div>
 
       <div>
-        <label for="quote-source-url">Provide a url source of the quote</label>
-        <input type="url" name="quote_source_url" id="quote-source-url" >
+        <label for="quote-source-url" class="submit-label">Provide a url source of the quote</label>
+        <input type="url" name="quote_source_url" id="quote-source-url" class="last-submit-box">
       </div>
 
-      <input type="submit" id="submit-a-quote" value="Submit Quote">
+      <button type="submit" id="submit-a-quote" value="Submit Quote" class="submit-quote-button">Submit Quote</button>
       
       </form>
 

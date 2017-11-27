@@ -38,7 +38,41 @@ a {
 	padding: .75rem 2.25rem;
 	text-shadow: none;
 	box-shadow: none;
+
+	&:hover {
+		box-shadow: none;
+		border-color: $color__text-hover;
+		color: $color__text-hover;
+	}
 }
+
+.submit-quote-button {
+	background-color: $color__background-main;
+	border: 2px solid $color__text-main;
+	border-radius: 3px;
+	color: $color__text-main;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1;
+	padding: .75rem 2.25rem;
+	text-shadow: none;
+	box-shadow: none;
+
+	&:hover {
+		box-shadow: none;
+		border-color: $color__text-hover;
+		color: $color__text-hover;
+	}
+}
+
+.search-submit {
+	background-color: transparent;
+	box-shadow: none;
+	border-color: none;
+	border: none;
+	color: $color__text-main;
+	text-shadow: none;
+} 
 
 /* Menus */
 
