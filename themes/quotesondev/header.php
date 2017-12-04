@@ -26,8 +26,9 @@
 
 				<div class='logo'>
 					<a href='<?php echo esc_url( home_url( '/' ) ); ?>' >
-						<img src='<?php echo get_stylesheet_directory_uri(); ?>/images/qod-logo.svg'>
+						<img src='<?php echo get_stylesheet_directory_uri(); ?>/images/qod-logo.svg' alt='quotesondev logo'>
 					</a>
+				</div>
 
 
 				</div><!-- .site-branding -->
