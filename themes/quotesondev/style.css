@@ -484,7 +484,11 @@ a {
   padding: .75rem 2.25rem;
   text-shadow: none;
   -webkit-box-shadow: none;
-          box-shadow: none; }
+          box-shadow: none;
+  display: block; }
+  @media (min-width: 1080px) {
+    .new-quote-button {
+      margin: 0 auto; } }
   .new-quote-button:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -530,6 +534,9 @@ a {
   float: left;
   width: 100%;
   margin-bottom: 1rem; }
+  @media (min-width: 620px) {
+    .main-navigation {
+      width: auto; } }
   .main-navigation ul {
     display: block;
     list-style: none;
@@ -705,24 +712,23 @@ a {
         margin: 0 auto;
         display: block; } }
 
-.site-footer ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
-  .site-footer ul li:first-child {
-    padding-right: 1rem;
-    border-right: 1px solid #fff;
-    line-height: 1rem; }
-  .site-footer ul li:nth-child(2n) {
-    padding: 0rem 1rem;
-    border-right: 1px solid #fff;
-    line-height: 1rem; }
-  .site-footer ul li:nth-child(3n) {
-    padding: 0rem 1rem;
-    line-height: 1rem; }
-
-.site-footer .site-info {
+.site-footer {
   margin: 4.5rem 0; }
+  .site-footer ul {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex; }
+    .site-footer ul li:first-child {
+      padding-right: 1rem;
+      border-right: 1px solid #fff;
+      line-height: 1rem; }
+    .site-footer ul li:nth-child(2n) {
+      padding: 0rem 1rem;
+      border-right: 1px solid #fff;
+      line-height: 1rem; }
+    .site-footer ul li:nth-child(3n) {
+      padding: 0rem 1rem;
+      line-height: 1rem; }
   .site-footer .site-info .footer-info {
     margin: 1.5rem 0;
     font-size: 1rem; }

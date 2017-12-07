@@ -60,7 +60,6 @@
 	margin: 3rem 0rem 0rem 0rem;
 
 	.site-branding {
-
 		.logo {
 
 			img {
@@ -68,13 +67,11 @@
 
 				@include tablet {
 					width: 31rem;
-					
 				}
 				@include desktop {
 					width: 44rem;
 					margin: 0 auto;
 					display: block;
-				
 				}
 			}
 		}
@@ -82,7 +79,7 @@
 }
 
 .site-footer {
-
+	margin: 4.5rem 0;
 	ul {
 		display: inline-flex;
 
@@ -103,10 +100,7 @@
 			line-height: 1rem;
 		}
 	}
-
 	.site-info {
-		margin: 4.5rem 0; 
-
 		.footer-info {
 			margin: 1.5rem 0;
 			font-size: 1rem;

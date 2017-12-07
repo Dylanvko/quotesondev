@@ -38,6 +38,10 @@ a {
 	padding: .75rem 2.25rem;
 	text-shadow: none;
 	box-shadow: none;
+	display: block;
+	@include desktop {
+		margin: 0 auto;
+	}
 
 	&:hover {
 		box-shadow: none;
@@ -88,6 +92,9 @@ a {
 	float: left;
 	width: 100%;
 	margin-bottom: 1rem;
+	@include tablet {
+		width: auto;
+	}
 
 	ul {
 		display: block;
@@ -150,10 +157,6 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-}
-
-.site-info {
-	
 }
 
 /* Small menu. */
